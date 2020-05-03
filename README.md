@@ -14,7 +14,7 @@ A2 --> )\
 B1 --> [\
 B2 --> ]\
 C1 --> {\
-C2 --> }\
+C2 --> }
 
 Basically any bracket that opens needs to close. This {{{()[]}}} is part of the language while this {] is not. \
 
