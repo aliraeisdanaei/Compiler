@@ -16,6 +16,6 @@ B2 --> ]\
 C1 --> {\
 C2 --> }
 
-Basically any bracket that opens needs to close. This {{{()[]}}} is part of the language while this {] is not. \
+Basically any bracket that opens needs to close. This {{{()[]}}} is part of the language while this {] is not. 
 
 The grammar has been simplified to chomsky's normal form for simplicity. 
