@@ -1,6 +1,6 @@
 # compiler
 
-This project was created to better understand the concepts data structures and computational theory. 
+This project was created to better understand the concepts of data structures and computational theory courses. 
 It includes the following:
 1. ADT & implementation of a stack & queue.
 2. A Reverser of Queue that uses a stack to check that the stack & queue are working properlly. 
