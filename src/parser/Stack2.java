@@ -1,4 +1,5 @@
-package compiler;
+package parser;
+
 /**
  * implementation using arrays
  */
@@ -17,28 +18,30 @@ public class Stack2 implements Stack2_ADT {
 
     /**
      * returns & deletes the top of the stack if not empty
+     * 
      * @throws IndexOutOfBoundsException when stack is empty
      * @return top of the stack
      */
     @Override
     public Object pop() {
-        if(this.isEmpty()){
+        if (this.isEmpty()) {
             throw new IndexOutOfBoundsException();
         }
         Object tmp = arr[indexTop];
         arr[indexTop--] = null;
-//        System.out.println("Currently popping: " + tmp.toString());
+        // System.out.println("Currently popping: " + tmp.toString());
         return tmp;
     }
 
     /**
      * pushes obj x onto stack if not full
+     * 
      * @throws IndexOutOfBoundsException if the stack is full
      * @param x the object that will be pushed onto the top of the stack
      */
     @Override
     public void push(Object x) {
-        if(indexTop == MAX_SIZE - 1){
+        if (indexTop == MAX_SIZE - 1) {
             throw new IndexOutOfBoundsException("The stack is full, indexTop: " + indexTop);
         }
         indexTop++;
@@ -48,6 +51,7 @@ public class Stack2 implements Stack2_ADT {
 
     /**
      * returns true iff the stack is empty
+     * 
      * @return true iff the stack is empty
      */
     @Override
@@ -57,11 +61,12 @@ public class Stack2 implements Stack2_ADT {
 
     /**
      * return the obj at top of stack w/o deleting it from the stack
+     * 
      * @return the obj at top of stack
      */
     @Override
     public Object top() {
-        if(this.isEmpty()){
+        if (this.isEmpty()) {
             throw new IndexOutOfBoundsException();
         }
         Object tmp = arr[indexTop];
@@ -70,6 +75,7 @@ public class Stack2 implements Stack2_ADT {
 
     /**
      * returns the number of obj in this stack
+     * 
      * @return the size of the stack
      */
     @Override
@@ -79,19 +85,22 @@ public class Stack2 implements Stack2_ADT {
 
     /**
      * sends back the stack
+     * 
      * @return the array of objects/ stack
      */
-    public Object[] getStack(){
+    public Object[] getStack() {
         return this.arr;
     }
 
     /**
-     * assuming the queue is all strings will return an array of size of the current queue of all strings inside it
+     * assuming the queue is all strings will return an array of size of the current
+     * queue of all strings inside it
+     * 
      * @return an array of size {@code .size()} of all strings
      */
-    public String[] getQueueString(){
-        String [] arrString = new String[this.size()];
-        for(int i = 0; i < this.size(); i++){
+    public String[] getQueueString() {
+        String[] arrString = new String[this.size()];
+        for (int i = 0; i < this.size(); i++) {
             arrString[i] = (String) this.arr[i];
             // System.out.print(arrString[i]);
         }
