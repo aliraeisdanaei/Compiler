@@ -118,7 +118,6 @@ public class ParserBracket {
      *         reduction was not possible
      */
     private int reduce() {
-        // System.out.print("here is the stack: ");
         // Tester.printArray(this.tokenStack.getQueueString());
         // System.out.print("checked productions: ");
 
