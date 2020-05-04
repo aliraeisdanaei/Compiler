@@ -1,4 +1,4 @@
-# compiler
+# Parser
 
 This project was created to better understand the concepts of data structures and computational theory courses. 
 It includes the following:
